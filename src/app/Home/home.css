@@ -1,0 +1,51 @@
+.container{
+    height: 4000px;
+   /* height: max-content; */
+    width: 100vw;
+    background-color: white;
+}
+.container {
+    padding: 20px;
+  }
+  
+  input {
+    width: 100%; /* Full width */
+  }
+  
+  .grid {
+    grid-template-columns: repeat(5, 1fr); /* Five columns */
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    color: black;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Loading spinner styles */
+  .loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px; /* Size of the loader */
+    height: 40px; /* Size of the loader */
+    animation: spin 1s linear infinite; /* Animation */
+    margin: 20px; /* Spacing */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
