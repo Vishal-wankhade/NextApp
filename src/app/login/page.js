@@ -18,7 +18,8 @@ export default function Login() {
     // Set the logged-in user in context
       router.push('/Home');  // Redirect to the home page
     } catch (err) {
-      setError(err.message);
+      alert(err.message)
+      // setError(err.message);
     }
   };
 
@@ -43,7 +44,7 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
           />
-          <p className="font-bold text-[#0070ba]">Forgot password?</p>
+          {/* <p className="font-bold text-[#0070ba]">Forgot password?</p> */}
         </div>
         <div className="flex flex-col space-y-5 w-full">
           <button

@@ -15,7 +15,8 @@ export default function SignUp() {
       // Redirect or handle successful sign up
       alert("sign up successfull try login now !!")
     } catch (err) {
-      setError(err.message);
+      alert(err.message);
+      // setError(err.message);
 
     }
   };
@@ -38,7 +39,7 @@ export default function SignUp() {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password" />
-    <p className="font-bold text-[#0070ba]">Forgot password?</p>
+    {/* <p className="font-bold text-[#0070ba]">Forgot password?</p> */}
   </div>
   <div className="flex flex-col space-y-5 w-full">
     <button className="w-full bg-[#0070ba] rounded-3xl p-3 text-white font-bold transition duration-200 hover:bg-[#003087]" onClick={handleSignUp}>Sign Up</button>
